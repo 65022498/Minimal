@@ -1,11 +1,11 @@
 package Shop_Library;
 
 // Concrete subclass PetShop
-class PetShop extends Shop {
+public class PetShop extends Shop {
     private int numberOfPets;
 
-    public PetShop(String shopName, int numberOfPets) {
-        super(shopName);
+    public PetShop(String name, int numberOfPets) {
+        super(name);
         this.numberOfPets = numberOfPets;
     }
 
@@ -24,4 +24,5 @@ class PetShop extends Shop {
     public String GetCategory(){
       return "Pet Shop";
     }
+
 }
